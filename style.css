@@ -206,6 +206,10 @@ footer p {
         float: left;
         width: 250px;
     }
+    .description {
+        font-size: .9rem;
+        line-height: 1.15rem;
+    }
     /* PROJECTS */
     .projects {
         height: 300px;
