@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalin Ramsey | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <header>
-            <h2>What do you call a Software Engineer and a Brand Consultant all in one?</h2>
-            <img src="https://via.placeholder.com/150?text=LOGO" alt="Kalin Ramsey brand logo">
+        <header id="hero" role="banner">
+            <!-- <div id="header-wrapper">
+                <img id="header-img" src="https://via.placeholder.com/1920x250?text=Header-Image" alt="Header image">
+                <div id="text-wrapper">
+                    <h2>What do you call a Software Engineer and a Brand Consultant all in one?</h2>
+                </div>
+            </div> -->
+            <h2 id="tagline">What do you call a Software Engineer and a Brand Consultant all in one?</h2>
+            <img id="logo" src="https://via.placeholder.com/150?text=LOGO" alt="Kalin Ramsey brand logo">
             <h1>Call me Kai</h1>
             <h2>Nice to meet you!</h2>
         </header>
-        <section>
+        <section id="nav" role="navigation">
             <ul>
-                <li>ABOUT</li>
-                <li>PORTFOLIO</li>
-                <li>CONTACT</li>
+                <li id="about-btn"><h2>ABOUT</h2></li>
+                <li id="port-btn"><h2>PORTFOLIO</h2></li>
+                <li id="contact-btn"><h2>CONTACT</h2></li>
             </ul>
         </section>
-        <section>
+        <section id="content">
             <div id="about">
                 <h1>ABOUT</h1>
                 <img src="https://via.placeholder.com/150?text=PROFILE-PIC" alt="Professional Profile Picture">
@@ -73,7 +80,7 @@
                 </section>
             </div>
         </section>
-        <footer>
+        <footer role="footer">
             <p>All art and designs © Kalin Ramsey, 2020. All rights reserved.</p>
         </footer>
     </main>

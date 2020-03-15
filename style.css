@@ -1,0 +1,102 @@
+/*---GENERIC STYLES---*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Play&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+/*---HERO STYLES---*/
+#tagline {
+    background: url('https://via.placeholder.com/1920x1080?text=...');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 150px;
+    /* align-items: 50%; */
+    justify-content: center;
+    padding: 30px 20px 0 20px;
+}
+/* #header-wrapper {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: -9;
+}
+#header-img {
+    width: 100vw;
+    height: 150px;
+}
+#text-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: -30%;
+}
+#text-wrapper h2{
+    text-align: center;
+    font-size: 4vw;
+} */
+#logo {
+    display: block;
+    margin-top: -50px;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+/*---NAV STYLES---*/
+#nav ul {
+    text-align: center;
+    padding: 0;
+}
+#nav li {
+    list-style-type: none;
+    margin: 10px auto;
+}
+#about-btn, #port-btn, #contact-btn {
+    color: white;
+    background: gray;
+    padding: 10px;
+    width: 120px;
+    border-radius: 50px;
+}
+#about-btn:hover, #port-btn:hover, #contact-btn:hover {
+    color: white;
+    background: darkgray;
+    padding: 10px;
+    width: 120px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#about-btn:active, #port-btn:active, #contact-btn:active {
+    border: 3px solid gray;
+    padding: 7px;
+}
+
+/*---CONTENT STYLES---*/
+#about, #portfolio, #contact {
+    display: none;
+}
+
+/*---FOOTER STYLES---*/
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    color: gray;
+    text-align: center;
+    background-image: linear-gradient(to top, white, white, rgba(255,255,255,0));
+    font-size: 12px;
+    padding: 5px;
+}
+footer p {
+    position: relative;
+    bottom: -50px;
+}
