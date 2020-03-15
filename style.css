@@ -14,6 +14,9 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
+section {
+    max-width: 480px;
+}
 /*---HERO STYLES---*/
 #tagline {
     background: url('https://via.placeholder.com/1920x1080?text=...');
@@ -23,7 +26,8 @@ p {
     height: 150px;
     /* align-items: 50%; */
     justify-content: center;
-    padding: 30px 20px 0 20px;
+    padding: 20px 20px 0 20px;
+    font-size: .95rem;
 }
 /* #header-wrapper {
     width: 100%;
@@ -46,18 +50,22 @@ p {
 } */
 #logo {
     display: block;
-    margin-top: -50px;
+    margin-top: -60px;
     border-radius: 100%;
     border: 5px solid white;
 }
 /*---NAV STYLES---*/
 #nav ul {
+    /* display: none; */
     text-align: center;
     padding: 0;
 }
 #nav li {
     list-style-type: none;
     margin: 10px auto;
+}
+#nav li a {
+    text-decoration: none;
 }
 #about-btn, #port-btn, #contact-btn {
     color: white;
@@ -81,22 +89,152 @@ p {
 
 /*---CONTENT STYLES---*/
 #about, #portfolio, #contact {
-    display: none;
+    /* display: none; */
+}
+.subheader {
+    color: darkgray;
+    font-size: 3rem;
+}
+.image {
+    border-radius: 10px;
+    margin: 10px;
+    width: 150px;
+}
+.description {
+    margin: 20px;
+    line-height: 1.75rem;
+    font-size: 1rem;
 }
 
+/*==> ABOUT  */
+#titles{
+    text-align: center;
+    padding-left: 0;
+}
+#titles li {
+    font-size: .9rem;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+.sidenote {
+    color: darkgray;
+    font-style: italic;
+}
+/*==> PORTFOLIO */
+.projects {
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.project-tech {
+    color: darkgray;
+}
+.project-links {
+    color: white;
+    background: gray;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.project-links a {
+    color: white;
+    text-decoration: none;
+}
+.project-links a:hover {
+    color: yellow;
+}
+.project-links a:visited{
+    color: black;
+}
+/*==> CONTACT  */
+#contact {
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+#contact form {
+    width: 100%;
+    background: black;
+    padding: 10px;
+    margin: 10px;
+}
+#contact img {
+    margin: 10px;
+    border-radius: 5px;
+}
+#contact a{
+    text-decoration: none;
+}
 /*---FOOTER STYLES---*/
 footer {
     position: fixed;
     bottom: 0;
-    height: 75px;
+    left: 0;
+    height: 100px;
     width: 100%;
     color: gray;
     text-align: center;
     background-image: linear-gradient(to top, white, white, rgba(255,255,255,0));
     font-size: 12px;
-    padding: 5px;
 }
 footer p {
     position: relative;
-    bottom: -50px;
+    bottom: -75px;
+    padding: 5px;
+    background: gray;
+    color: white;
+}
+
+@media screen and (min-width: 940px){
+    section {
+        max-width: 100%;
+        /* margin: 0 20px; */
+        text-align: center;
+    }
+    #nav ul li{
+        display: inline-block;
+        margin: 20px 10px;
+    }
+    .subheader {
+        display: none;
+    }
+
+    /* ABOUT */
+    .image {
+        float: left;
+        width: 250px;
+    }
+    /* PROJECTS */
+    .projects {
+        height: 300px;
+        position: relative;
+    }
+    .project-tech {
+        margin-top: 20px;
+    }
+    .project-links {
+        position: absolute;
+        bottom: 25px;
+        right: 20px;
+    }
+}
+@media screen and (min-width: 1240px){
+    body{
+        background: gray;
+    }
+    main {
+        background: white;
+        width: 740px;
+    }
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer {
+        width: 740px;
+        right: 0;
+        background-image: none;
+    }
 }

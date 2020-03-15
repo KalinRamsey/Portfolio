@@ -22,61 +22,78 @@
         </header>
         <section id="nav" role="navigation">
             <ul>
-                <li id="about-btn"><h2>ABOUT</h2></li>
-                <li id="port-btn"><h2>PORTFOLIO</h2></li>
-                <li id="contact-btn"><h2>CONTACT</h2></li>
+                <li><a href="#about"><h2 id="about-btn">ABOUT</h2></a></li>
+                <li><a href="#portfolio"><h2 id="port-btn">PORTFOLIO</h2></a></li>
+                <li><a href="#contact"><h2 id="contact-btn">CONTACT</h2></a></li>
             </ul>
         </section>
         <section id="content">
             <div id="about">
-                <h1>ABOUT</h1>
-                <img src="https://via.placeholder.com/150?text=PROFILE-PIC" alt="Professional Profile Picture">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus maiores aspernatur deserunt. Architecto doloremque, obcaecati cumque numquam ab, quas dignissimos optio aspernatur culpa non porro deserunt modi magni debitis maxime omnis sint aut! Porro praesentium obcaecati voluptates ratione quos id, fugit error, quibusdam in laborum est, ducimus nam exercitationem reprehenderit.</p>
+                <section id="short-bio">
+                    <h1 class="subheader">ABOUT</h1>
+                    <img src="https://via.placeholder.com/300?text=PROFILE-PIC" alt="Professional Profile Picture" id="profile-pic" class="image">
+                    <ul id="titles">
+                        <li>Software Engineer</li>
+                        <li>Illustrator</li>
+                        <li>Brand Manager</li>
+                    </ul>
+                </section>
+                <p class="description">
+                    For as long as I can remember, my passion has been primarily driven by two contradictory forces:
+                    <br>
+                    Creativity and Logic
+                    <br>
+                    <span class="sidenote">(I am a Gemini - duality is kind of my thing!)</span>
+                    <br>
+                    <br>
+                    I am a Full Stack Software Engineer (in training), Illustrator, Brand Manager, and friend.
+
+                    As an artist for most of my life, I always took pride in my ability to bring my ideas to life. As I grew wiser with age and experience, I discovered much greater fulfillment in showing others that their visions can become reality, too. Having learned to work within and manage teams throughout my career, I am always amazed by how much more a group can accomplish together, and love being a part of that constructive environment.
+
+                    While I am constantly juggling a career and clients, my innate thirst for knowledge drives me to learn new things, ranging from bits of trivia to entirely new skillsets. I value my personal growth above all, and always make a point to travel, connect with loved ones, and maintain self-care. New experiences are my greatest motivators - the more challenging, the better!</p>
             </div>
             <div id="portfolio">
-                <h1>PORTFOLIO</h1>
-                <section id="project-1">
-                    <img src="https://via.placeholder.com/150?text=SCREENSHOT-1" class="project-image" alt="Project 1 Screenshot">
+                <h1 class="subheader">PORTFOLIO</h1>
+                <section class="projects" id="project-1">
+                    <img src="https://via.placeholder.com/300?text=SCREENSHOT-1" class="image" alt="Project 1 Screenshot">
                     <h2 class="project-header">PROJECT TITLE</h2>
                     <h3 class="project-tech">Technologies Used</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam quos eum quibusdam incidunt iste labore nobis laborum reprehenderit. Voluptas!</p>
-                    <span class="project-links"><a href="">LIVE</a> | <a href="">REPO</a></span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam quos eum quibusdam incidunt iste labore nobis laborum reprehenderit. Voluptas!</p>
+                    <span class="project-links"><a href="#">LIVE</a> | <a href="#">REPO</a></span>
                 </section>
-                <section id="project-2">
-                    <img src="https://via.placeholder.com/150?text=SCREENSHOT-2" class="project-image" alt="Project 2 Screenshot">
+                <section class="projects" id="project-2">
+                    <img src="https://via.placeholder.com/300?text=SCREENSHOT-2" class="image" alt="Project 2 Screenshot">
                     <h2 class="project-header">PROJECT TITLE</h2>
                     <h3 class="project-tech">Technologies Used</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam quos eum quibusdam incidunt iste labore nobis laborum reprehenderit. Voluptas!</p>
-                    <span class="project-links"><a href="">LIVE</a> | <a href="">REPO</a></span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam quos eum quibusdam incidunt iste labore nobis laborum reprehenderit. Voluptas!</p>
+                    <span class="project-links"><a href="#">LIVE</a> | <a href="#">REPO</a></span>
                 </section>
-                <section id="project-3">
-                    <img src="https://via.placeholder.com/150?text=SCREENSHOT-3" class="project-image" alt="Project 3 Screenshot">
+                <section class="projects" id="project-3">
+                    <img src="https://via.placeholder.com/300?text=SCREENSHOT-3" class="image" alt="Project 3 Screenshot">
                     <h2 class="project-header">PROJECT TITLE</h2>
                     <h3 class="project-tech">Technologies Used</h3>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam quos eum quibusdam incidunt iste labore nobis laborum reprehenderit. Voluptas!</p>
-                    <span class="project-links"><a href="">LIVE</a> | <a href="">REPO</a></span>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magnam quos eum quibusdam incidunt iste labore nobis laborum reprehenderit. Voluptas!</p>
+                    <span class="project-links"><a href="#">LIVE</a> | <a href="#">REPO</a></span>
                 </section>
             </div>
             <div id="contact">
-                <h1>CONTACT</h1>
-                <form name="EmailForm" action="mailto:kalinramsey@gmail.com" >
-                    <input type="text" name="name" placeholder="Your Name*" required>
-                    <input type="email" name="email" placeholder="Your Email*" required>
-                    <br>
-                    <input type="tel" name="phone" placeholder="123-456-7890(optional)">
-                    <input type="text" name="subject" placeholder="Subject*" required>
-                    <br>
-                    <textarea name="message" placeholder="Your message*" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="reset">
-                    <button type="submit">Send</button>
-                </form>
+                <h1 class="subheader">CONTACT</h1>
+                
                 <p>If you like what you see, email me!</p>
+                <a href="mailto:kalinramsey@gmail.com?subject=About Your Portfolio...">
+                    <img src="https://via.placeholder.com/300x50?text=Click-to-Send-Email" alt="email-button">
+                </a>
                 <p>Or connect with me on social media:</p>
                 <section id="social-media">
-                    <img src="https://via.placeholder.com/50?text=_" alt="facebook-icon">
-                    <img src="https://via.placeholder.com/50?text=_" alt="linkedin-icon">
-                    <img src="https://via.placeholder.com/50?text=_" alt="github-icon">
+                    <a href="https://www.facebook.com/kalin.ramsey/">
+                        <img src="https://via.placeholder.com/50?text=f" alt="facebook-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kalin-ramsey-14468944/">
+                        <img src="https://via.placeholder.com/50?text=in" alt="linkedin-icon">
+                    </a>
+                    <a href="https://github.com/KRamseyArt">
+                        <img src="https://via.placeholder.com/50?text=git" alt="github-icon">
+                    </a>
                 </section>
             </div>
         </section>
