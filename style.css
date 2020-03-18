@@ -7,19 +7,24 @@
     font-family: 'Play', sans-serif;
     text-align: center;
 }
+h1{
+    font-size: 42px;
+}
 h2 {
-    font-size: 20px;
+    font-size: 34px;
 }
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 22px;
 }
 section {
-    max-width: 480px;
+    max-width: 95%;
 }
 /*---HERO STYLES---*/
 #tagline {
-    background: url('https://via.placeholder.com/1920x1080?text=...');
+    background: url('https://via.placeholder.com/1920x1080/bbb?text=...');
+    color: white;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -27,32 +32,17 @@ section {
     /* align-items: 50%; */
     justify-content: center;
     padding: 20px 20px 0 20px;
-    font-size: .95rem;
+    
 }
-/* #header-wrapper {
-    width: 100%;
-    height: 150px;
-    position: relative;
-    z-index: -9;
-}
-#header-img {
-    width: 100vw;
-    height: 150px;
-}
-#text-wrapper {
-    position: relative;
-    width: 100%;
-    margin-top: -30%;
-}
-#text-wrapper h2{
-    text-align: center;
-    font-size: 4vw;
-} */
 #logo {
     display: block;
     margin-top: -60px;
     border-radius: 100%;
     border: 5px solid white;
+}
+#hero h2 {
+    color: darkgray;
+    font-size: 1.5em;
 }
 /*---NAV STYLES---*/
 #nav ul {
@@ -62,28 +52,25 @@ section {
 }
 #nav li {
     list-style-type: none;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 #nav li a {
     text-decoration: none;
 }
 #about-btn, #port-btn, #contact-btn {
     color: white;
-    background: gray;
+    background: #2512D9;
     padding: 10px;
-    width: 120px;
+    width: 200px;
     border-radius: 50px;
 }
 #about-btn:hover, #port-btn:hover, #contact-btn:hover {
-    color: white;
-    background: darkgray;
+    background: rgb(0, 110, 255);
     padding: 10px;
-    width: 120px;
-    border-radius: 50px;
     cursor: pointer;
 }
 #about-btn:active, #port-btn:active, #contact-btn:active {
-    border: 3px solid gray;
+    border: 3px solid #2512D9;
     padding: 7px;
 }
 
@@ -101,64 +88,126 @@ section {
     width: 150px;
 }
 .description {
-    margin: 20px;
+    margin: 10px;
     line-height: 1.75rem;
     font-size: 1rem;
 }
 
 /*==> ABOUT  */
+#about {
+    margin: 10px;
+    /* border: 2px solid lightgray; */
+    border-radius: 10px;
+}
+#profile-pic {
+    margin: 20px;
+}
 #titles{
+    color: white;
     text-align: center;
     padding-left: 0;
 }
 #titles li {
     font-size: .9rem;
     list-style-type: none;
-    display: inline-block;
-    margin: 0 10px;
+    /* display: inline-block; */
+    margin: 10px 70px;
     font-style: italic;
-    font-weight: bold;
+    /* font-weight: bold; */
+    background: rgb(0, 110, 255);
+    padding: 10px;
+    border-radius: 50px;
+}
+#about-txt {
+    /* margin: 20px; */
 }
 .sidenote {
     color: darkgray;
     font-style: italic;
 }
 /*==> PORTFOLIO */
-.projects {
-    border: 3px solid lightgray;
+#portfolio {
+    padding: 0px;
+    /* border: 2px solid lightgray; */
     border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+}
+.projects {
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+}
+.project-header {
+    color: #2512D9;
 }
 .project-tech {
     color: darkgray;
 }
 .project-links {
     color: white;
-    background: gray;
-    padding: 5px 10px;
+    background: rgb(0, 110, 255);
+    padding: 5px 20px;
     border-radius: 50px;
+    margin-bottom: 10px;
 }
 .project-links a {
     color: white;
     text-decoration: none;
 }
 .project-links a:hover {
-    color: yellow;
-}
-.project-links a:visited{
-    color: black;
+    color: rgb(11, 247, 109);
 }
 /*==> CONTACT  */
 #contact {
-    margin-bottom: 100px;
-    padding-bottom: 50px;
+    margin-bottom: 10px;
 }
 #contact form {
-    width: 100%;
-    background: black;
-    padding: 10px;
+    /* background: black; */
+    /* padding: 10px; */
     margin: 10px;
+}
+#contact fieldset {
+    border: none;
+    border-radius: 10px;
+    padding: 0px;
+    max-width: 540px;
+}
+#contact legend {
+    margin: 0px;
+}
+#contact p {
+    margin: 10px 0px;
+    font-size: 16px;
+}
+.contact-sect {
+    display: flex;
+}
+.contact-info {
+    flex: 1;
+    border: 2px solid lightgray;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#message-area {
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    /* width: 100%; */
+    flex: 1;
+    margin: 4px;
+}
+#send-btn {
+    border: none;
+    padding: 20px 10px;
+    margin: 5px;
+    background: #2512D9;
+    color: white;
+    border-radius: 5px;
+    flex: 1;
+}
+#send-btn:hover {
+    background:rgb(0, 110, 255);
 }
 #contact img {
     margin: 10px;
@@ -169,25 +218,34 @@ section {
 }
 /*---FOOTER STYLES---*/
 footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
-    height: 100px;
+    height: 120px;
     width: 100%;
-    color: gray;
+    background: #2512D9;
     text-align: center;
-    background-image: linear-gradient(to top, white, white, rgba(255,255,255,0));
-    font-size: 12px;
+    /* background-image: linear-gradient(to top, white, white, rgba(255,255,255,0)); */
 }
 footer p {
-    position: relative;
-    bottom: -75px;
-    padding: 5px;
-    background: gray;
+    font-size: 11px;
+    padding: 0 10px;
     color: white;
 }
+footer h3 {
+    color: white;
+}
+#social-media {
+    display: flex;
+    max-width: 240px;
+}
+#social-media img {
+    border-radius: 10px;
+    flex: 2;
+    margin: 10px;
+}
 
-@media screen and (min-width: 940px){
+@media screen and (min-width: 768px){
     section {
         max-width: 100%;
         /* margin: 0 20px; */
@@ -202,15 +260,36 @@ footer p {
     }
 
     /* ABOUT */
-    .image {
+    #about-div{
+        display: flex;
+    }
+    #about-txt {
+        flex: 2;
+    }
+    #about-div img {
+        flex: 1;
+        max-width: 250px;
+        height: 250px;
+    }
+    #titles {
+        display: flex;
+        margin-top: 20px;
+    }
+    #titles li {
+        flex: 1;
+        margin: 0px 10px;
+    }
+    .description {
+        text-align: left;
+        font-size: .9rem;
+        line-height: 1.15rem;
+        margin: 20px 10px;
+    }
+    /* PROJECTS */
+    .project-img {
         float: left;
         width: 250px;
     }
-    .description {
-        font-size: .9rem;
-        line-height: 1.15rem;
-    }
-    /* PROJECTS */
     .projects {
         height: 300px;
         position: relative;
@@ -223,7 +302,18 @@ footer p {
         bottom: 25px;
         right: 20px;
     }
+    /* CONTACT */
+    #send-btn {
+        border: none;
+        padding: 20px 10px;
+        margin: 5px;
+        background: #2512D9;
+        color: white;
+        border-radius: 5px;
+        flex: 1;
+    }
 }
+
 @media screen and (min-width: 1240px){
     body{
         background: gray;
@@ -236,9 +326,14 @@ footer p {
         margin-left: 20px;
         margin-right: 20px;
     }
-    footer {
-        width: 740px;
-        right: 0;
-        background-image: none;
+    #titles {
+        background: rgb(0, 110, 255);
+        margin-top: 20px;
+        border-radius: 50px;
+    }
+    #titles li {
+        flex: 1;
+        margin: 0 0px;
+        background: none;
     }
 }
