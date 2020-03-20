@@ -23,7 +23,7 @@ section {
 }
 /*---HERO STYLES---*/
 #tagline {
-    background: url('https://via.placeholder.com/1920x1080/bbb?text=...');
+    background: url('https://drive.google.com/uc?export=view&id=1V25hbgnstMgaMQ4piEZ0AeWhI7Jaf3xA');
     color: white;
     background-size: cover;
     background-position: center;
@@ -38,7 +38,8 @@ section {
     display: block;
     margin-top: -60px;
     border-radius: 100%;
-    border: 5px solid white;
+    width: 150px;
+    /* border: 5px solid white; */
 }
 #hero h2 {
     color: darkgray;
@@ -52,7 +53,7 @@ section {
 }
 #nav li {
     list-style-type: none;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 #nav li a {
     text-decoration: none;
@@ -70,21 +71,23 @@ section {
     cursor: pointer;
 }
 #about-btn:active, #port-btn:active, #contact-btn:active {
-    border: 3px solid #2512D9;
-    padding: 7px;
+    /* border: 3px solid #2512D9; */
+    padding: 10px;
 }
 
 /*---CONTENT STYLES---*/
 #about, #portfolio, #contact {
-    /* display: none; */
+    display: none;
+    padding-bottom: 130px;
 }
 .subheader {
+    display: none;
     color: darkgray;
     font-size: 3rem;
 }
 .image {
     border-radius: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     width: 150px;
 }
 .description {
@@ -97,7 +100,7 @@ section {
 #about {
     margin: 10px;
     /* border: 2px solid lightgray; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 #profile-pic {
     margin: 20px;
@@ -118,25 +121,39 @@ section {
     padding: 10px;
     border-radius: 50px;
 }
-#about-txt {
-    /* margin: 20px; */
-}
 .sidenote {
     color: darkgray;
     font-style: italic;
 }
 /*==> PORTFOLIO */
 #portfolio {
-    padding: 0px;
-    /* border: 2px solid lightgray; */
     border-radius: 10px;
     margin: 10px;
 }
 .projects {
-    border: 2px solid lightgray;
+    /* border: 2px solid lightgray; */
     border-radius: 10px;
     margin: 10px auto;
     padding-bottom: 20px;
+}
+#project-1{
+    background-image: url("https://drive.google.com/thumbnail?id=1YGhnZHqiGPZyMGZ428P7IcIEhvdsZriR");
+}
+
+.project-thumb {
+    border: 2px solid lightgray;
+    height: 250px;
+    
+    /* margin: 10px; */
+    /* padding: 15px; */
+}
+.project-img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    
 }
 .project-header {
     color: #2512D9;
@@ -218,7 +235,7 @@ section {
 }
 /*---FOOTER STYLES---*/
 footer {
-    /* position: fixed; */
+    position: fixed;
     bottom: 0;
     left: 0;
     height: 120px;
@@ -260,22 +277,27 @@ footer h3 {
     }
 
     /* ABOUT */
+    #about {
+        display: block;
+    }
     #about-div{
         display: flex;
+        padding-right: 10px;
     }
     #about-txt {
         flex: 2;
     }
-    #about-div img {
+    #profile-pic {
         flex: 1;
-        max-width: 250px;
-        height: 250px;
+        /* max-width: 250px; */
+        /* height: 250px; */
     }
     #titles {
         display: flex;
         margin-top: 20px;
     }
     #titles li {
+        font-size: 14px;
         flex: 1;
         margin: 0px 10px;
     }
@@ -283,23 +305,36 @@ footer h3 {
         text-align: left;
         font-size: .9rem;
         line-height: 1.15rem;
-        margin: 20px 10px;
+        margin: 20px auto;
     }
     /* PROJECTS */
-    .project-img {
-        float: left;
-        width: 250px;
+    #project-1{
+        background-image: url("https://drive.google.com/uc?id=1SadcXbJLiYrWk5NQ7aGvybXDgx9zs70m");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px;
     }
     .projects {
-        height: 300px;
+        /* height: 300px; */
         position: relative;
+        display: flex;
+    }
+    .project-thumb {
+        flex: 1;
+        margin: 0 10px 0 10px;
+    }
+    .project-info {
+        flex: 2;
     }
     .project-tech {
         margin-top: 20px;
     }
     .project-links {
         position: absolute;
-        bottom: 25px;
+        /* bottom: 100px; */
         right: 20px;
     }
     /* CONTACT */
@@ -316,11 +351,12 @@ footer h3 {
 
 @media screen and (min-width: 1240px){
     body{
-        background: gray;
+        background:black;
     }
     main {
         background: white;
         width: 740px;
+        min-height: 100vh;
     }
     section {
         margin-left: 20px;
