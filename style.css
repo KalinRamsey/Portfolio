@@ -377,7 +377,7 @@ footer h3 {
     #send-btn {
         border: none;
         padding: 20px 10px;
-        margin: 5px;
+        margin: 5px auto;
         background: #2512D9;
         color: white;
         border-radius: 5px;
