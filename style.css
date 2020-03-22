@@ -184,9 +184,7 @@ section {
     color: rgb(11, 247, 109);
 }
 /*==> CONTACT  */
-.labels {
-    display: none;
-}
+
 #contact {
     margin-bottom: 10px;
     width: 100%;
@@ -197,7 +195,7 @@ section {
 }
 #contact legend {
     /* margin: 0px; */
-    font-size: 14px;
+    font-size: 18px;
     color: darkgray;
 }
 #contact p {
@@ -206,31 +204,49 @@ section {
 }
 .contact-sect {
     display: flex;
-    width: 280px;
+    flex:1;
+    flex-direction: column;
+}
+.labels {
+    /* display: none; */
+    display: inline;
+    margin-bottom: -20px;
+    z-index: 9;
+    background: white;
+    border: 2px solid lightgray;
+    padding: 2px 10px;
+    border-radius: 20px;
 }
 .contact-info {
     flex: 1;
     border: 2px solid lightgray;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 5px auto;
     border-radius: 5px;
-    width: 100px;
+    width: 280px;
+}
+.contact-info:focus{
+    border: 2px solid rgb(0, 110, 255);
 }
 #message-area {
     border-radius: 10px;
     border: 2px solid lightgray;
-    /* width: 100%; */
+    width: 280px;
     flex: 1;
-    margin: 4px;
+    margin: 4px auto;
+}
+#message-area:focus{
+    border: 2px solid rgb(0, 110, 255);
 }
 #send-btn {
     border: none;
     padding: 20px 10px;
-    margin: 5px;
+    margin: 5px auto;
     background: #2512D9;
     color: white;
     border-radius: 5px;
     flex: 1;
+    width: 280px;
 }
 #send-btn:hover {
     background:rgb(0, 110, 255);
