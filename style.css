@@ -184,6 +184,9 @@ section {
     color: rgb(11, 247, 109);
 }
 /*==> CONTACT  */
+.labels {
+    display: none;
+}
 #contact {
     margin-bottom: 10px;
     width: 100%;
