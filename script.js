@@ -1,4 +1,3 @@
-
 function main(){
     // Load each section on corresponding button click
     handleContentDisplay();
