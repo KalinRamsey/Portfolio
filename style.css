@@ -195,6 +195,7 @@ section {
 #contact legend {
     /* margin: 0px; */
     font-size: 14px;
+    color: darkgray;
 }
 #contact p {
     margin: 10px 0px;
