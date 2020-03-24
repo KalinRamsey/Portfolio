@@ -14,7 +14,7 @@ h2 {
     font-size: 34px;
 }
 h3 {
-    color: darkgray;
+    color: gray;
 }
 p {
     font-family: 'Montserrat', sans-serif;
@@ -167,7 +167,7 @@ section {
     color: #2512D9;
 }
 .project-tech {
-    color: darkgray;
+    color: gray;
 }
 .project-links {
     color: white;
@@ -196,7 +196,7 @@ section {
 #contact legend {
     /* margin: 0px; */
     font-size: 18px;
-    color: darkgray;
+    color: gray;
 }
 #contact p {
     margin: 10px 0px;
