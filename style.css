@@ -29,7 +29,7 @@ section {
     max-width: 95%;
 }
 #content {
-    padding-bottom: 160px;
+    padding-bottom: 130px;
 }
 /*---HERO STYLES---*/
 #tagline {
@@ -210,10 +210,11 @@ section {
 .labels {
     margin-bottom: -7px;
     z-index: 9;
-    background: white;
-    border: 2px solid lightgray;
+    /* background: white; */
+    /* border: 2px solid lightgray; */
     padding: 2px 10px;
     border-radius: 20px;
+    color: gray;
 }
 .contact-info {
     flex: 1;
@@ -265,12 +266,12 @@ footer {
     width: 100%;
     /* background: #2512D9; */
     text-align: center;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     background-image: linear-gradient(to right, black, #2512D9, black);
 }
 footer p {
     font-size: 10px;
-    padding: 0 10px;
+    padding: 0 10px 10px 10px;
     color: white;
 }
 footer h3 {
