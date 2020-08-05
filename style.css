@@ -304,9 +304,9 @@ footer h3 {
     }
 
     /* ABOUT */
-    #about {
+    /* #about {
         display: block;
-    }
+    } */
     #about-div{
         display: flex;
         padding-right: 10px;
@@ -338,7 +338,9 @@ footer h3 {
         margin: 20px auto;
     }
     /* PROJECTS */
-    
+    #portfolio {
+        display: block;
+    }
     .projects {
         /* height: 300px; */
         position: relative;

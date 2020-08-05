@@ -29,18 +29,18 @@ function handleContactSubmission (){
 }
 
 function handleContentDisplay() {
-    $('#about-btn').on('click', e=>{
-        // hide current content
-        hideContent();
-        // show corresponding content
-        $('#about').css('display', 'block');
-    });
-
     $('#port-btn').on('click', e=>{
         // hide current content
         hideContent();
         // show corresponding content
         $('#portfolio').css('display', 'block');
+    });
+    
+    $('#about-btn').on('click', e=>{
+        // hide current content
+        hideContent();
+        // show corresponding content
+        $('#about').css('display', 'block');
     });
 
     $('#contact-btn').on('click', e=>{

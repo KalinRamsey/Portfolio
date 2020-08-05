@@ -10,24 +10,94 @@
 <body>
     <main>
         <header id="hero">
-            <!-- <div id="header-wrapper">
-                <img id="header-img" src="https://via.placeholder.com/1920x250?text=Header-Image" alt="Header image">
-                <div id="text-wrapper">
-                    <h2>What do you call a Software Engineer and a Brand Consultant all in one?</h2>
-                </div>
-            </div> -->
             <div id="tagline"></div>
             <img id="logo" src="https://drive.google.com/uc?id=1EFicFd4yZ-dma7QUAEZ_00lswgsSajXI" alt="Kalin Ramsey brand logo">
             <h1>Kalin Ramsey</h1>
         </header>
         <section id="nav" role="navigation">
             <ul>
-                <li><h2 id="about-btn">ABOUT</h2></li>
                 <li><h2 id="port-btn">PORTFOLIO</h2></li>
+                <li><h2 id="about-btn">ABOUT</h2></li>
                 <li><h2 id="contact-btn">CONTACT</h2></li>
             </ul>
         </section>
         <section id="content">
+            <div id="portfolio">
+                <h2 class="subheader">PORTFOLIO</h2>
+                
+                <section class="projects">
+                    <div class="project-thumb">
+                        <img class="project-img" src="./portfolioProjects/FAVRApp_Screenshots2.jpg" alt="picture of FAVR App">
+                        <img class="project-img-long" src="./portfolioProjects/FAVRApp_Screenshots.jpg" alt="picture of FAVR App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-header">FAVR APP</h3>
+                        <h3 class="project-tech">PostgreSQL | Express | ReactJS | NodeJS</h3>
+                        <p class="description">A tool created to address individual accountability in task completion, this semi-social network allows users to create a profile and assign tasks (Favors) to other users. At the same time, it keeps a record of Favors received and delivered, to provide users a visual representation of their own helpfulness, and which contacts are more demanding or helpful.</p>
+                        <span class="project-links">
+                            <a href="https://favr-app.kramseyart.vercel.app/" target="_blank">
+                                LIVE
+                            </a> | <a href="https://github.com/KRamseyArt/23.4_FAVR-Client" target="_blank">
+                                REPO
+                            </a>
+                        </span>
+                    </div>
+                </section>
+                <section class="projects">
+                    <div class="project-thumb">
+                        <img class="project-img" src="./portfolioProjects/EncycloBestiaryApp_Screenshots2.jpg" alt="picture of Encyclo•Bestiary App">
+                        <img class="project-img-long" src="./portfolioProjects/EncycloBestiaryApp_Screenshots.jpg" alt="picture of Encyclo•Bestiary App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-header">ENCYCLO•BESTIARY APP</h3>
+                        <h3 class="project-tech">PostgreSQL | Express | ReactJS | NodeJS</h3>
+                        <p class="description">This cataloging tool was initially developed to assist world-builders in the creation of themed templates to aid in organizing groups of information on the cities, monsters, magic, and various other fantastical features they envision.</p>
+                        <span class="project-links">
+                            <a href="https://encyclo-bestiary-app.kramseyart.vercel.app/" target="_blank">
+                                LIVE
+                            </a> | <a href="https://github.com/KRamseyArt/19.5_Encyclo-Bestiary-Client" target="_blank">
+                                REPO
+                            </a>
+                        </span>
+                    </div>
+                </section>
+                <section class="projects">
+                    <div class="project-thumb">
+                        <img class="project-img" src="./portfolioProjects/CookAlongApp_Screenshots2.jpg" alt="picture of Cook•Along App">
+                        <img class="project-img-long" src="./portfolioProjects/CookAlongApp_Screenshots.jpg" alt="picture of Cook•Along App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-header">COOK•ALONG APP</h3>
+                        <h3 class="project-tech">HTML | CSS | JavaScript | jQuery | TheMealDB API | YouTube API</h3>
+                        <p class="description">This recipe finding app eliminates lengthy historical accounts of a recipe's origins, and presents multiple options on how to make a specific dish. Users can find meals by looking for key ingredients, regional origins, and key terms. They are then shown a list of ingredients most commonly used in this dish's preparation, and several instructional videos that may vary from chef to chef.</p>
+                        <span class="project-links">
+                            <a href="https://kramseyart.github.io/Cook-Along-App/" target="_blank">
+                                LIVE
+                            </a> | <a href="https://github.com/KRamseyArt/Cook-Along-App" target="_blank">
+                                REPO
+                            </a>
+                        </span>
+                    </div>
+                </section>
+                <section class="projects">
+                    <div class="project-thumb" href="https://drive.google.com/file/d/1YGhnZHqiGPZyMGZ428P7IcIEhvdsZriR/view?usp=sharing">
+                        <img class="project-img" src="./portfolioProjects/QuizApp_Screenshots2.jpg" alt="picture of Egyptian Quiz App">
+                        <img class="project-img-long" src="./portfolioProjects/QuizApp_Screenshots.jpg" alt="picture of Egyptian Quiz App">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-header">EGYPTIAN QUIZ APP</h3>
+                        <h3 class="project-tech">HTML | CSS | JavaScript | jQuery</h3>
+                        <p class="description">Created a quiz consisting of 10 questions, each with a corresponding image and 4 corresponding answers. The order of questions is randomized, and score is tracked until completion, at which point it is cleared and a retry option is presented.</p>
+                        <span class="project-links">
+                            <a href="https://kramseyart.github.io/Thinkful_QuizApp/" target="_blank">
+                                LIVE
+                            </a> | <a href="https://github.com/KRamseyArt/Thinkful_QuizApp" target="_blank">
+                                REPO
+                            </a>
+                        </span>
+                    </div>
+                </section>
+            </div>
             <div id="about">
                 
                 <h2 class="subheader">ABOUT</h2>
@@ -50,46 +120,6 @@
                         <p class="description">Personal growth is my greatest priority, so I'm constantly striving to learn new skills and technologies.</p>
                     </div>
                 </div>
-            </div>
-            <div id="portfolio">
-                <h2 class="subheader">PORTFOLIO</h2>
-                <section class="projects">
-                    <a class="project-thumb" href="https://drive.google.com/file/d/1YGhnZHqiGPZyMGZ428P7IcIEhvdsZriR/view?usp=sharing">
-                        <img class="project-img" src="https://drive.google.com/uc?id=1YGhnZHqiGPZyMGZ428P7IcIEhvdsZriR" alt="picture of Egyptian Quiz App">
-                        <img class="project-img-long" src="https://drive.google.com/uc?id=1SadcXbJLiYrWk5NQ7aGvybXDgx9zs70m" alt="picture of Egyptian Quiz App">
-                        <!-- <div id="project-1" class="project-img"></div> -->
-                    </a>
-                    <div class="project-info">
-                        <h3 class="project-header">EGYPTIAN QUIZ APP</h3>
-                        <h3 class="project-tech">HTML | CSS | JavaScript | jQuery</h3>
-                        <p class="description">Created a quiz consisting of 10 questions, each with a corresponding image and 4 corresponding answers. The order of questions is randomized, and score is tracked until completion, at which point it is cleared and a retry option is presented.</p>
-                        <span class="project-links">
-                            <a href="https://kramseyart.github.io/Thinkful_QuizApp/" target="_blank">
-                                LIVE
-                            </a> | <a href="https://github.com/KRamseyArt/Thinkful_QuizApp" target="_blank">
-                                REPO
-                            </a>
-                        </span>
-                    </div>
-                </section>
-                <section class="projects">
-                    <a class="project-thumb" href="https://drive.google.com/file/d/1Pjq_SkBEB9CIPNjQvrSWuGjg5Sr_MdHf/view?usp=sharing">
-                        <img class="project-img" src="https://drive.google.com/uc?id=1Pjq_SkBEB9CIPNjQvrSWuGjg5Sr_MdHf" alt="picture of Cook•Along App">
-                        <img class="project-img-long" src="https://drive.google.com/uc?id=1ND4ObYOEytbUVMJS8ZhqSyFM0g4pFQhy" alt="picture of Cook•Along App">
-                    </a>
-                    <div class="project-info">
-                        <h3 class="project-header">COOK•ALONG APP</h3>
-                        <h3 class="project-tech">HTML | CSS | JavaScript | jQuery | TheMealDB API | YouTube API</h3>
-                        <p class="description">This recipe finding app eliminates lengthy historical accounts of a recipe's origins, and presents multiple options on how to make a specific dish. Users can find meals by looking for key ingredients, regional origins, and key terms. They are then shown a list of ingredients most commonly used in this dish's preparation, and several instructional videos that may vary from chef to chef.</p>
-                        <span class="project-links">
-                            <a href="https://kramseyart.github.io/Cook-Along-App/" target="_blank">
-                                LIVE
-                            </a> | <a href="https://github.com/KRamseyArt/Cook-Along-App" target="_blank">
-                                REPO
-                            </a>
-                        </span>
-                    </div>
-                </section>
             </div>
             <div id="contact">
                 <h2 class="subheader">CONTACT</h2>
