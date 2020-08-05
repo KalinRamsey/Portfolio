@@ -178,6 +178,8 @@ section {
 }
 .project-links a {
     color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 .project-links a:hover {
