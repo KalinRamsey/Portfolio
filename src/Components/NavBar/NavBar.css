@@ -1,0 +1,22 @@
+#navBar {
+  background: white;
+  height: 90px;
+  padding-top: 20px;
+}
+
+#icon {
+  background: url('../../Assets/KRlogo_NEW3X.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+#directories {
+  padding: 0;
+  display: none;
+}
+#directories li {
+  list-style-type: none;
+}
