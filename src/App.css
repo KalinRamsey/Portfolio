@@ -1,6 +1,36 @@
-* {
-  box-sizing: border-box;
-  margin: 0 auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+#spacer {
+  height: calc(100vh - 50px);
+}
+
+.title {
+  font-family: 'Play', sans-serif;
+  color: #2512d9;
+  font-size: 3rem;
+  width: 100%;
+}
+
+.fa {
+  color: white;
+  font-size: 100px;
+}
+.fa:hover {
+  cursor: pointer;
+  transition: .2s ease-in;
+  color: #2512d9;
+}
+
+.faBtn {
+  border: none;
+  background: none;
+  margin: 20px;
+  /* padding: 1px 0; */
+  border-radius: 50%;
+  transition: .5s ease-out;
+}
+.faBtn:hover {
+  background: white;
+  box-shadow: 
+    0 0 10px 1px white,
+    0 0 30px 5px #2512d9;
+  transition: .5s;
 }

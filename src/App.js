@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Hero />
+      <div id="spacer"/>
       <AboutMe />
       <Experience />
       <Projects />

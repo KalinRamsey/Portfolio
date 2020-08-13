@@ -1,0 +1,51 @@
+#NavMenu {
+  margin-top: -43px;
+  background-image: linear-gradient(to bottom, #2512d9,  rgba(0,0,0,1));
+  height: calc(100vh - 33px);
+  transition: 2s ease-in;
+}
+
+#NavMenu ul{
+  padding: 0;
+}
+#NavMenu li{
+  list-style: none;
+  padding: 20px 0;
+}
+#NavMenu li:first-child {
+  padding-top: 100px;
+}
+.navLink {
+  font-family: 'Play', sans-serif;
+  color: white;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 36px;
+  padding: 10px 40px;
+  border-radius: 50px;
+  box-shadow: none;
+  transition: background .5s ease-out;
+}
+.navLink:hover {
+  cursor: pointer;
+  background: white;
+  color: #2512d9;
+  padding: 10px 40px;
+  border-radius: 50px;
+  box-shadow: 
+    0 0 10px 1px white,
+    0 0 30px 5px #2512d9;
+  transition: .2s ease-in;
+}
+
+#toTop {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#toTop h4 {
+  background: #2512d9;
+  color: white;
+  padding: 5px;
+}
